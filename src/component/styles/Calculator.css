@@ -1,0 +1,37 @@
+.calcBody {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+}
+
+.result {
+  padding: 10px;
+  width: 100%;
+  background-color: #808080;
+  text-align: end;
+  font-family: Orbitron, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+.calcButtons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+}
+
+.calcBtn {
+  background-color: #dcdcdc;
+  padding: 20px;
+  border: 1px solid #808080;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.zero {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.operator {
+  background-color: #ffa500;
+}
