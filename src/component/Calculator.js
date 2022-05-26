@@ -10,7 +10,7 @@ const buttonsArray = [
   '7',
   '8',
   '9',
-  '*',
+  'x',
   '4',
   '5',
   '6',
@@ -24,7 +24,7 @@ const buttonsArray = [
   '=',
 ];
 
-const operatorsArray = ['÷', '*', '-', '+', '='];
+const operatorsArray = ['÷', 'x', '-', '+', '='];
 
 class Calculator extends React.Component {
   constructor(props) {
