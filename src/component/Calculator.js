@@ -1,6 +1,30 @@
 import React from 'react';
 import './styles/Calculator.css';
 
+const buttonsArray = [
+  'AC',
+  '+/-',
+  '%',
+  '÷',
+  '7',
+  '8',
+  '9',
+  '*',
+  '4',
+  '5',
+  '6',
+  '-',
+  '1',
+  '2',
+  '3',
+  '+',
+  '0',
+  '.',
+  '=',
+];
+
+const operatorsArray = ['÷', '*', '-', '+', '='];
+
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
@@ -9,66 +33,17 @@ class Calculator extends React.Component {
 
   render() {
     return (
-      <div className="calcBody">
+      <div className="calculatorBody">
         <input type="text" className="result" value={0} />
-        <div className="calcButtons">
-          <button className="calcBtn" type="button">
-            AC
-          </button>
-          <button className="calcBtn" type="button">
-            +/-
-          </button>
-          <button className="calcBtn" type="button">
-            %
-          </button>
-          <button className="calcBtn operator" type="button">
-            ÷
-          </button>
-          <button className="calcBtn" type="button">
-            7
-          </button>
-          <button className="calcBtn" type="button">
-            8
-          </button>
-          <button className="calcBtn" type="button">
-            9
-          </button>
-          <button className="calcBtn operator" type="button">
-            *
-          </button>
-          <button className="calcBtn" type="button">
-            4
-          </button>
-          <button className="calcBtn" type="button">
-            5
-          </button>
-          <button className="calcBtn" type="button">
-            6
-          </button>
-          <button className="calcBtn operator" type="button">
-            -
-          </button>
-          <button className="calcBtn" type="button">
-            1
-          </button>
-          <button className="calcBtn" type="button">
-            2
-          </button>
-          <button className="calcBtn" type="button">
-            3
-          </button>
-          <button className="calcBtn operator" type="button">
-            +
-          </button>
-          <button className="calcBtn zero" type="button">
-            0
-          </button>
-          <button className="calcBtn" type="button">
-            .
-          </button>
-          <button className="calcBtn operator" type="button">
-            =
-          </button>
+        <div className="calculatorButtons">
+          {buttonsArray.map((value) => {
+            const operator = operatorsArray.includes(value) ? 'operator' : '';
+            return (
+              <button className={`calculatorBtn ${operator}`} type="button" key={value}>
+                {value}
+              </button>
+            );
+          })}
         </div>
       </div>
     );

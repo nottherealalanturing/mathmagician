@@ -1,4 +1,4 @@
-.calcBody {
+.calculatorBody {
   max-width: 400px;
   margin: 0 auto;
   border: 1px solid #fff;
@@ -13,13 +13,13 @@
   font-size: 30px;
 }
 
-.calcButtons {
+.calculatorButtons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
 }
 
-.calcBtn {
+.calculatorBtn {
   background-color: #dcdcdc;
   padding: 20px;
   border: 1px solid #808080;
@@ -27,7 +27,7 @@
   font-size: 20px;
 }
 
-.zero {
+.calculatorBtn:nth-child(17) {
   grid-column-start: 1;
   grid-column-end: 3;
 }
