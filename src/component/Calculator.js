@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/Calculator.css';
+import calculate from '../logic/calculate';
 
 const buttonsArray = [
   'AC',
@@ -9,7 +10,7 @@ const buttonsArray = [
   '7',
   '8',
   '9',
-  '*',
+  'x',
   '4',
   '5',
   '6',
@@ -23,23 +24,47 @@ const buttonsArray = [
   '=',
 ];
 
-const operatorsArray = ['÷', '*', '-', '+', '='];
+const operatorsArray = ['÷', 'x', '-', '+', '='];
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    this.setState((state) => ({
+      ...state,
+      ...calculate(state, e.target.name),
+    }));
   }
 
   render() {
+    const { total, next, operation } = this.state;
+
     return (
       <div className="calculatorBody">
-        <input type="text" className="result" value={0} />
+        <p type="text" className="result">
+          {total}
+          {operation}
+          {next}
+        </p>
         <div className="calculatorButtons">
           {buttonsArray.map((value) => {
             const operator = operatorsArray.includes(value) ? 'operator' : '';
             return (
-              <button className={`calculatorBtn ${operator}`} type="button" key={value}>
+              <button
+                className={`calculatorBtn ${operator}`}
+                type="button"
+                key={value}
+                name={value}
+                onClick={this.handleClick}
+              >
                 {value}
               </button>
             );
