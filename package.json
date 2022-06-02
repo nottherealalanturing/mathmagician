@@ -24,6 +24,7 @@
     "styf": "npx stylelint \"**/*.{css,scss}\" --fix",
     "es": "npx eslint .",
     "esfix": "npx eslint . --fix",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
