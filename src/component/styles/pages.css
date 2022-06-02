@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5% 50px 5%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.navlinks {
+  display: flex;
+  gap: 10px;
+}
+
+.welcomeText {
+  margin-bottom: 20px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+
+.homeContainer {
+  margin: 0 5% 0 5%;
+  font-size: 20px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.calculatorContainer {
+  margin: 0 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quoteText {
+  margin: 0 5% 0 5%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}

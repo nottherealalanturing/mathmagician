@@ -5,7 +5,10 @@ import NavBar from '../component/Navbar';
 const Calculator = () => (
   <div>
     <NavBar />
-    <CalculatorComponent />
+    <div className="calculatorContainer">
+      <h3>Lets do some meth!</h3>
+      <CalculatorComponent />
+    </div>
   </div>
 );
 

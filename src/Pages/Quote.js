@@ -4,7 +4,10 @@ import NavBar from '../component/Navbar';
 const Quote = () => (
   <div>
     <NavBar />
-    <h1>Quote</h1>
+    <p className="quoteText">
+      Mathematics is not about numbers, equations, computaions, or algorithms; it is about
+      understanding. -William Paul Thurston
+    </p>
   </div>
 );
 
