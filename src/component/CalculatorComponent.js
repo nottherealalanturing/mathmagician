@@ -26,7 +26,7 @@ const buttonsArray = [
 
 const operatorsArray = ['÷', 'x', '-', '+', '='];
 
-const Calculator = () => {
+const CalculatorComponent = () => {
   const [state, setState] = useState({
     total: 0,
     next: null,
@@ -69,4 +69,4 @@ const Calculator = () => {
   );
 };
 
-export default Calculator;
+export default CalculatorComponent;
