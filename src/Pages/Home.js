@@ -1,10 +1,8 @@
 import React from 'react';
-import NavBar from '../component/Navbar';
 import '../component/styles/pages.css';
 
 const Home = () => (
   <>
-    <NavBar />
     <div className="homeContainer">
       <h1 className="welcomeText">Welcome to our page</h1>
       <p className="paragraph">
