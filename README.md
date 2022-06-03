@@ -8,6 +8,10 @@
 - Linters (Lighthouse, Webhint, Stylelint, Eslint)
 - Git/GitHub work-flow
 
+## Link
+
+[Mathmagician](https://nottherealalanturing.github.io/mathmagician)
+
 ### Installation
 
 - clone this repo `git clone git@github.com:nottherealalanturing/mathmagician.git` on your terminal.
@@ -17,18 +21,21 @@
 
 ```
 npm install
-```
 
 ### Build the app
 
 ```
+
 npm run build
+
 ```
 
 ### Run the app
 
 ```
+
 npm start
+
 ```
 
 ### Prerequisites
@@ -51,3 +58,4 @@ Contributions, issues, and feature requests are welcome!
 ## Show your support
 
 Give a ⭐️ if you like this project!
+```

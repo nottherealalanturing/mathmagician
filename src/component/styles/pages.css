@@ -1,0 +1,54 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5% 50px 5%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlink {
+  padding: 10px;
+  text-decoration: none;
+  background: darkolivegreen;
+  border-radius: 4px;
+  border: 1px solid black;
+  transition: all 0.4s ease-in-out;
+}
+
+.navlink:hover {
+  transform: scale(1.2);
+}
+
+.welcomeText {
+  margin-bottom: 20px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 50px;
+}
+
+.homeContainer {
+  margin: 0 5% 0 5%;
+  font-size: 20px;
+}
+
+.paragraph {
+  margin-bottom: 20px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.calculatorContainer {
+  margin: 0 5% 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quoteText {
+  margin: 0 5% 0 5%;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
