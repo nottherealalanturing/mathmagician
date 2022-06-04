@@ -10,7 +10,10 @@
 
 ## Link
 
-[Mathmagician](https://nottherealalanturing.github.io/mathmagician)
+[GHpages](https://nottherealalanturing.github.io/mathmagician)
+[netlify](https://voluble-croissant-13891d.netlify.app/)
+[heroku](https://violablecroissant.herokuapp.com/))
+
 
 ### Installation
 
